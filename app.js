@@ -14,22 +14,22 @@ var People = /** @class */ (function () {
 }());
 var obj = new People();
 obj.speak();
-var Greeter = /** @class */ (function () {
-    function Greeter(message) {
-        this.greeting = message;
-    }
-    Greeter.prototype.gree = function () {
-        return "Hello" + this.greeting;
-    };
-    return Greeter;
-}());
-var greeter = new Greeter("world");
-var button = document.createElement('buton');
-button.textContent = 'SayHello';
-button.onclick = function () {
-    alert(greeter.gree());
-};
-document.body.appendChild(button);
+// class Greeter {
+//     greeting: string;
+//     constructor(message: string) {
+//         this.greeting = message;
+//     }
+//     gree() {
+//         return "Hello" + this.greeting
+//     }
+// }
+// let greeter = new Greeter("world");
+// let button = document.createElement('buton');
+// button.textContent = 'SayHello';
+// button.onclick = function() {
+//     alert(greeter.gree());
+// }
+// document.body.appendChild(button);
 //基础类型
 //any 赋予任意类型的的值
 var binarycode = 10; //二进制
