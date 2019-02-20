@@ -1,5 +1,5 @@
 # typescript-sample
-#### just some private pratice sample to know about some typescript
+
 TypeScript 是一种给 JavaScript 添加特性的语言扩展。增加的功能包括：
 
 - 类型批注和编译时类型检查

@@ -13,6 +13,25 @@ class People {
 var obj = new People();
 obj.speak();
 
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    gree() {
+        return "Hello" + this.greeting
+    }
+}
+
+let greeter = new Greeter("world");
+
+let button = document.createElement('buton');
+button.textContent = 'SayHello';
+button.onclick = function() {
+    alert(greeter.gree());
+}
+document.body.appendChild(button);
+
 //基础类型
 //any 赋予任意类型的的值
 
@@ -46,4 +65,28 @@ function hello(): void {
 }
 
 // null undefined never TypeScript 和 JavaScript 没有整数类型。
+
+//Any 类型 变量的值会动态改变时，比如来自用户的输入，任意值类型可以让这些变量跳过编译阶段的类型检查
+let a: any = 1;
+a = 'Who am i' //string
+a = false; //boolean
+//改写现有代码时，任意值允许在编译时可选择地包含或移除类型检查
+let b: any = 6;
+b.ifExists(); //正确，ifItExists方法在运行时可能存在，但这里并不会检查
+b.toFixed(); //true
+
+//定义存储各种类型数据的数组时
+let arrayList: any[] = [1, false, 'fine'];
+arrayList[1] = 100;
+
+//类型断言 Type Assertion 可以用来手动指定一个值的类型 <类型>值 or 值 as 类型
+
+var str = '1'
+var str2: number = <number> <any> str //str as string
+console.log(str2);
+
+
+
+
+
 
