@@ -85,8 +85,10 @@ var str = '1'
 var str2: number = <number> <any> str //str as string
 console.log(str2);
 
+var num: number = 12;
+var result = num > 0 ? "大于0" : "小于0,或等于0";
+console.log(result);
 
-
-
-
-
+var typeNum = 12
+console.log(typeof typeNum); // number
+//instanceof 判断对象是否为指定的类型

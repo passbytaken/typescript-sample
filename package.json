@@ -1,0 +1,19 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "TypeScript 是一种给 JavaScript 添加特性的语言扩展。增加的功能包括：",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/passbytaken/typescript-sample.git"
+  },
+  "author": "jakoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/passbytaken/typescript-sample/issues"
+  },
+  "homepage": "https://github.com/passbytaken/typescript-sample#readme"
+}
