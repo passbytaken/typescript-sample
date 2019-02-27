@@ -13,24 +13,24 @@ class People {
 var obj = new People();
 obj.speak();
 
-// class Greeter {
-//     greeting: string;
-//     constructor(message: string) {
-//         this.greeting = message;
-//     }
-//     gree() {
-//         return "Hello" + this.greeting
-//     }
-// }
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    gree() {
+        return "Hello" + this.greeting
+    }
+}
 
-// let greeter = new Greeter("world");
+let greeter = new Greeter("world");
 
-// let button = document.createElement('buton');
-// button.textContent = 'SayHello';
-// button.onclick = function() {
-//     alert(greeter.gree());
-// }
-// document.body.appendChild(button);
+let button = document.createElement('buton');
+button.textContent = 'SayHello';
+button.onclick = function() {
+    alert(greeter.gree());
+}
+document.body.appendChild(button);
 
 //基础类型
 //any 赋予任意类型的的值
