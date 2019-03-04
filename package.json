@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/passbytaken/typescript-sample/issues"
   },
-  "homepage": "https://github.com/passbytaken/typescript-sample#readme"
+  "homepage": "https://github.com/passbytaken/typescript-sample#readme",
+  "devDependencies": {
+    "ts-loader": "^5.3.3"
+  }
 }
