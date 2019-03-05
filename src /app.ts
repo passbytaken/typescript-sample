@@ -92,3 +92,4 @@ console.log(result);
 var typeNum = 12
 console.log(typeof typeNum); // number
 //instanceof 判断对象是否为指定的类型
+
