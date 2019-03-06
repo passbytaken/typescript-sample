@@ -72,4 +72,46 @@ switch(grade) {
    }
    console.log(factorial)
 
-   
+function greet(): string {
+    return "Hello Ty"
+}
+function caller() {
+    var msg = greet()
+    console.log(msg)
+}
+caller()
+
+function add(x: number, y: number): number {
+    return x + y;
+}
+console.log(add(1,2))
+//可选参数和默认参数
+
+function buildName(firstName: string, secondName?: string) {
+    return firstName + " " + secondName;
+}
+let res = buildName("kevin");
+
+function calcDiscount(price: number, rate: number = 0.50) {
+    var discount = price * rate;
+    console.log(discount);
+}
+calcDiscount(10000)
+calcDiscount(10000, 0.30)
+//剩余参数
+
+function getGoods(firstGood: string, ...resOfGood: string[]) {
+    return firstGood + " " + resOfGood.join(" ");
+}
+
+let goodName = getGoods("coffee", "cola", "chips", "milk")
+//匿名函数
+ var res1 = function() {
+     return "Hello"
+ }
+ console.log(res1);
+
+ var res2 = function(a: number, b: number) {
+     return a * b;
+ }
+ console.log(res2(2, 3))
