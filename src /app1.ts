@@ -115,3 +115,57 @@ let goodName = getGoods("coffee", "cola", "chips", "milk")
      return a * b;
  }
  console.log(res2(2, 3))
+// 构造函数
+ var res3 = new Function("a", "b", "return a * b");
+ var y = res3(4, 3);
+ console.log(y);
+ //递归
+function func(number) {
+    if (number <= 0){
+        return 1;
+    } else {
+        return (number * func(number - 1));
+    }
+}
+console.log(func(6))
+//Lambda function
+var foo = (x: number)=>10 + x
+console.log(foo(100))
+
+var foo1 = (x: number)=> {
+    x+=10;
+    console.log(x)
+}
+foo1(100)
+//不指定函数的参数类型，通过函数内来推断参数类型
+var func1 = (x)=> {
+    if (typeof x == 'number') {
+        console.log(x + 'is a number')
+    } else if (typeof x == 'string') {
+        console.log(x + 'is a string')
+    }
+}
+func1(112)
+func1('Happy')
+//单个参数 () 是可选的：
+var display = x => {
+    console.log(x)
+}
+display(12)
+//无参数时可以设置空括号：
+var disp = () => {
+    console.log("Function invoked");
+}
+disp();
+//函数重载
+function same(s1: string): void;
+function same(n1: number, n2: string): void;
+
+function same(x: any, y?: any): void {
+    console.log(x);
+    console.log(y);
+}
+same('abc')
+same(1, 'xyz')
+
+
