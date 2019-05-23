@@ -47,6 +47,7 @@ let words: string = `多行文本及内嵌表达式，${nickname} ${years} 岁 `
 let flag: boolean = true;
 
 let arr: number[] = [1, 2];
+//数组泛型
 let arr1: Array<number> = [1, 2];
 
 //元组
