@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/passbytaken/typescript-sample#readme",
   "devDependencies": {
-    "ts-loader": "^5.3.3"
+    "ts-loader": "^9.4.2"
   }
 }
